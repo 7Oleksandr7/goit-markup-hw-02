@@ -17,6 +17,7 @@
   --secondary-bg-color: #f5f4fa;
   --hero-footer-bg-color: #2f303a;
   --project-item-color: #eeeeee;
+  --primary-black-color: #000000;
 }
 
 body {
@@ -27,6 +28,7 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--primary-bg-color);
 }
+
 
 .list {
   list-style: none;
@@ -42,7 +44,7 @@ body {
 }
 
 .logo {
-  color: #000000;
+  color: var(--primary-black-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -62,6 +64,7 @@ body {
 .header-nav-list .link {
   color: var(--primary-text-color);
   letter-spacing: 0.02em;
+  font-weight: 500;
 }
 
 .header-nav-list .link:hover,
@@ -77,6 +80,7 @@ body {
   color: var(--secondary-text-color);
   letter-spacing: 0.02em;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .contact-list a:hover,
@@ -94,6 +98,7 @@ body {
   font-size: 44px;
   line-height: 1.37;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero-btn {
@@ -138,6 +143,10 @@ body {
   font-size: 16px;
 }
 
+.team-item-text{
+  font-weight: 400;
+}
+
 .team-item-text {
   color: var(--secondary-text-color);
 }
@@ -155,14 +164,21 @@ body {
   color: var(--accent-color);
 }
 
-.address a {
+.address-list a {
   font-style: normal;
   text-decoration: none;
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
+
+.address-list a:hover,
+.address-list a:focus {
+  color: var(--accent-color);
+}
+
 /* main portfolio */
 /* filter */
+
 .btn-filter {
   background-color: var(--secondary-bg-color);
   color: var(--primary-text-color);
